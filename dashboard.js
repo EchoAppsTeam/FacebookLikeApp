@@ -48,7 +48,7 @@ AcmeCorporation.Apps.FacebookLike.Dashboard = function(config) {
 	});
 
 	// apply 'ready' callback when dashboard rendering is complete
-	config.events.ready.apply();
+	config.events.ready.apply(this);
 };
 
 AcmeCorporation.Apps.FacebookLike.Dashboard.prototype.createInput = function(config) {
@@ -57,8 +57,8 @@ AcmeCorporation.Apps.FacebookLike.Dashboard.prototype.createInput = function(con
 	config.target.appendChild(label);
 
 	var input = document.createElement("input");
-	input.setAttribute("type", "text");
-	input.setAttribute("value", config.value || "");
+	input.type = "text";
+	input.value = config.value || "";
 	config.style && input.setAttribute("style", config.style);
 	config.target.appendChild(input);
 	return input;
