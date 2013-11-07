@@ -1,0 +1,26 @@
+{
+	"id": "facebook-like",
+	"name": "Facebook Like",
+	"description": "Facebook Like button lets people quickly share content with their friends. A single click on the button will 'like' pieces of content on the web, which shares them back to Facebook, where they can be seen by friends and re-shared.",
+	"app_version": "0.1.0",
+	"icon": "[place_your_url_here]/icon.png",
+	"developer": {
+		"id": "acme",
+		"name": "Acme Corporation",
+		"url": "http://www.acme-corporation.com",
+		"email": "solutions@acme-corporation.com",
+		"icon": "http://www.acme-corporation/acme-logo.png"
+	},
+	"dashboards": [{
+		"id": "settings",
+		"type": "instances",
+		"title": "Instances",
+		"script": "[place_your_url_here]/dashboard.js",
+		"component": "AcmeCorporation.Apps.FacebookLike.Dashboard"
+	}],
+	"client_widget": {
+		"component": "AcmeCorporation.Apps.FacebookLike",
+		"script": "[place_your_url_here]/app.js"
+	},
+	"cloudapp_protocol_version": "0.1.0"
+}
